@@ -3,49 +3,76 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container {
   float: right;
   margin-right: 345px;
   margin-top: 50px;
-  background-color: rgb(255, 250, 229,.90);
+  background-color: rgb(255, 250, 229, .90);
   max-width: 500px;
   padding: 10px;
+  border: groove black 1px;
   border-radius: 30px;
 }
+
 .form-check {
   font-family: 'Quicksand', sans-serif;
 }
 
 #output {
-  font-size: 40px;
-  background-color: rgb(255, 254, 249,.90);
-  max-width: 600px;
-  float: right;
-  margin-right: 352px;
+  text-align: center;
+  font-size: 30px;
   margin-top: 40px;
-  margin-bottom: 50px;
-  padding: 5px;
-  border-radius: 10px;
+  background-color: rgb(0, 0, 0, .90);
+  color: white;
+  border-radius: 15px;
   font-family: 'Quicksand', sans-serif;
 }
-label {
-font-size: 16px;
-font-weight: bold;
-font-family: 'Jua', sans-serif;
 
+label {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Jua', sans-serif;
 }
+
 h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+h2 {
+  font-size: 35px;
+  margin-top: -5px;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
-  margin-top: 10px;
-
 }
+
 .row {
   max-width: 200px;
   margin-left: 1px;
   font-family: 'Quicksand', sans-serif;
 }
-#gif {
 
+.hub {
+  max-width: 108px;
+  margin-left: 20px;
+}
 
+.post {
+  max-width: 90px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.caviar {
+  max-width: 85px;
+  border-radius: 12px;
+  margin-left: 60px;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Jua', sans-serif;
 }

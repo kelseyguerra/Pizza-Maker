@@ -19,9 +19,9 @@ $(document).ready(function() {
     var inputSize = $("#size").val();
     var inputToppings = 0;
     $("input:checkbox[name=toppings]:checked").each(function() {
-       inputToppings += parseInt($(this).val());
+      inputToppings += parseInt($(this).val());
     });
     var newPizza = new Pizza(inputSize, inputToppings);
-    $("#output").text("Total amount: $" + newPizza.price() +".00");
+    $("#output").text("Total amount: $" + newPizza.price() + ".00");
   });
 });
