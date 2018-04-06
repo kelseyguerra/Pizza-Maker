@@ -25,4 +25,3 @@ $(document).ready(function() {
     $("#output").text("Total amount: $" + newPizza.price() + ".00");
   });
 });
-alert(newPizza);
