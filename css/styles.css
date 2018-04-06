@@ -58,6 +58,7 @@ h2 {
 .hub {
   max-width: 108px;
   margin-left: 20px;
+  border-radius: 5px;
 }
 
 .post {
@@ -75,4 +76,7 @@ h2 {
 p {
   font-size: 18px;
   font-family: 'Jua', sans-serif;
+}
+img:hover {
+  border: groove white;
 }
