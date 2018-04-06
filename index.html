@@ -10,7 +10,8 @@
   <body>
     <div class="container">
      <h1>Let's Make Some Pizza!</h1>
-     <form id="formOne">
+     <div id="size">
+     <form id="order">
        <div class="form-group">
          <div class="radio">
            <label>
@@ -28,6 +29,29 @@
            </label>
          </div>
        </div>
+     </div>
+     </form>
+
+       <!-- TOPPINGS -->
+        <label>Choice of Toppings:</label>
+        <div class="form-group">
+          <input type="checkbox" name="toppings" value="cheese">Plain<br>
+          <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+          <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
+          <input type="checkbox" name="toppings" value="jalapenos">Jalapenos<br>
+          <input type="checkbox" name="toppings" value="oniones">Peppers & Onions<br>
+          <input type="checkbox" name="toppings" value="artichokes">Artichokes<br>
+          <input type="checkbox" name="toppings" value="Soppresatta">Soppresatta<br>
+          <input type="checkbox" name="toppings" value="peppers">Mama Lil's Peppers<br>
+          <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="truffle">Truffle Oil<br>
+          <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+        </div>
+        <button class="btn btn-danger" type="submit">ORDER</button>
+      </form>
+      <div id="order-details">
+
+      </div>
 
   </body>
 </html>
