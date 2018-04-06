@@ -1,20 +1,27 @@
 //Business Logic//
 
-function PizzaOrder(size, toppings) {
+function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
-  this.price;
 }
 
-PizzaOrder.prototype.calcPrice = function() {
-  var pizzaCost = 22;
-  if (this.size === "large") {
-    pizzaCost += 18;
-  } else if (this.size === "medium") {
-    pizzaCost += 12;
-  }
-  if (this.toppings.length > 2) {
-    pizzaCost += 2.0 * (this.toppings.length - 2);
-  }
-  this.price = pizzaCost;
+Pizza.prototype.price = function() {
+  return parseInt(this.size) + parseInt(this.toppings) + 15;
 }
+
+
+//User- Interface Logic//
+
+$(document).ready(function() {
+  $("#order").submit(function(event) {
+    event.preventDefault();
+
+    var inputSize = $("#size").val();
+    var inputToppings = 0;
+    $("input:checkbox[name=toppings]:checked").each(function() {
+       inputToppings += parseInt($(this).val());
+    });
+    var newPizza = new Pizza(inputSize, inputToppings);
+    $("#output").text("The price of your order will be $" + newPizza.price() +".");
+  });
+});

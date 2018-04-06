@@ -9,49 +9,38 @@
   </head>
   <body>
     <div class="container">
-     <h1>Let's Make Some Pizza!</h1>
-     <div id="size">
+      <h1>Let's Make Some Pizza!</h1>
      <form id="order">
-       <div class="form-group">
-         <div class="radio">
-           <label>
-             <input type="radio" name="pizza-size" value="small">Small - 12"
-           </label>
-         </div>
-         <div class="radio">
-           <label>
-             <input type="radio" name="pizza-size" value="med">Medium - 16"
-           </label>
-         </div>
-         <div class="radio">
-           <label>
-             <input type="radio" name="pizza-size" value="lrg">Large - 20"
-           </label>
+       <div class="row">
+         <div class="col col-md">
+           <label for="size"> Choose your Size:</label>
+           <select class="form-control" id="size">
+             <option value="4">Small</option>
+             <option value="6">Medium</option>
+             <option value="10">Large</option>
+           </select>
          </div>
        </div>
      </div>
-     </form>
-
-       <!-- TOPPINGS -->
-        <label>Choice of Toppings:</label>
-        <div class="form-group">
-          <input type="checkbox" name="toppings" value="cheese">Plain<br>
-          <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
-          <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
-          <input type="checkbox" name="toppings" value="jalapenos">Jalapenos<br>
-          <input type="checkbox" name="toppings" value="oniones">Peppers & Onions<br>
-          <input type="checkbox" name="toppings" value="artichokes">Artichokes<br>
-          <input type="checkbox" name="toppings" value="Soppresatta">Soppresatta<br>
-          <input type="checkbox" name="toppings" value="peppers">Mama Lil's Peppers<br>
-          <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
-          <input type="checkbox" name="toppings" value="truffle">Truffle Oil<br>
-          <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+     <!-- toppings -->
+      <div class="col col-md">
+        <label for="toppings">Choice of Toppings:</label>
+        <div class="form-check">
+          <input type="checkbox" name="toppings" value="1">Plain Cheese<br>
+          <input type="checkbox" name="toppings" value="2">Pepperoni<br>
+          <input type="checkbox" name="toppings" value="2">Pineapple<br>
+          <input type="checkbox" name="toppings" value="2">Jalapenos<br>
+          <input type="checkbox" name="toppings" value="2">Peppers & Onions<br>
+          <input type="checkbox" name="toppings" value="2">Artichokes<br>
+          <input type="checkbox" name="toppings" value="5">Soppresatta<br>
+          <input type="checkbox" name="toppings" value="2">Mama Lil's Peppers<br>
+          <input type="checkbox" name="toppings" value="2">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="2">Truffle Oil<br>
+          <input type="checkbox" name="toppings" value="5">Sausage<br>
         </div>
         <button class="btn btn-danger" type="submit">ORDER</button>
       </form>
-      <div id="order-details">
-
-      </div>
-
+      <h3 id="output">
+        </h3>
   </body>
 </html>
