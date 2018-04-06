@@ -1,5 +1,51 @@
-#size {
-  background-color: beige;
-  max-width: 300px;
+body {
+  background-image: url("../img/back4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  float: right;
+  margin-right: 345px;
+  margin-top: 50px;
+  background-color: rgb(255, 250, 229,.90);
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 30px;
+}
+.form-check {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#output {
+  font-size: 40px;
+  background-color: rgb(255, 254, 249,.90);
+  max-width: 600px;
+  float: right;
+  margin-right: 352px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   padding: 5px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+label {
+font-size: 16px;
+font-weight: bold;
+font-family: 'Jua', sans-serif;
+
+}
+h1 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 10px;
+
+}
+.row {
+  max-width: 200px;
+  margin-left: 1px;
+  font-family: 'Quicksand', sans-serif;
+}
+#gif {
+
+
 }

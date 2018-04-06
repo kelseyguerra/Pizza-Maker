@@ -6,7 +6,7 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.price = function() {
-  return parseInt(this.size) + parseInt(this.toppings) + 15;
+  return parseInt(this.size) + parseInt(this.toppings) + 12;
 }
 
 
@@ -22,6 +22,6 @@ $(document).ready(function() {
        inputToppings += parseInt($(this).val());
     });
     var newPizza = new Pizza(inputSize, inputToppings);
-    $("#output").text("The price of your order will be $" + newPizza.price() +".");
+    $("#output").text("Total amount: $" + newPizza.price() +".00");
   });
 });
