@@ -24,7 +24,7 @@ A webpage for a fictional restaurant which allows you to build a custom pizza an
 
 ## Known Bugs
 
-None at this time
+Some CSS styles will not function in Safari browser.
 
 ## Support and Contact
 

@@ -81,3 +81,6 @@ p {
 img:hover {
   border: groove white;
 }
+#safari {
+    background-color: rgb(255, 250, 229, .90);
+  }
