@@ -1,23 +1,21 @@
-# _Pizza Maker_
+# _Mama Kelsey's Pizza Maker_
 
-#### _A webpage which allows you to create a pizza, add toppings, and out put a price, April 6, 2018_
+#### _A webpage which allows you to create a pizza, add toppings, and output a price for your order, April 6, 2018_
 
 #### _Kelsey Guerra_
 
 ## Description
 
-A webpage which allows you to create a pizza, add toppings, and output a price for your order
+A webpage for a fictional restaurant which allows you to build a custom pizza and see the pricing based on your input
 
 ## Specifications
 
-|Program Behavior|Input |Output|
-|----------------|------|------|
-|Receives order and creates standardized plain pizza.|orderPizza()|[ { size: "medium", toppings: ["pepperoni"] } ]|
-|Receives size with order and creates pizza of matching size.|orderPizza( "small" )|[ { size: "small", toppings: ["pepperoni"] } ]|
-|Receives 1 topping with order and creates matching pizza.|orderPizza( "medium", ["pepperoni"] )|[ { size: "medium", toppings: ["pepperoni"] } ]|
-|Receives 2 toppings with order and create matching pizza.|orderPizza( "large", ["pepperoni", "pineapple"] )|[ { size: "large", toppings: ["pepperoni", "pineapple"] } ]|
-|Receives 2 pizza orders and creates both pizzas.|orderPizza( "small", ["cheese"] ), orderPizza( "medium", ["pepperoni"] )|[ { size: "small", toppings: ["cheese"] }, { size: "medium", toppings: ["pepperoni"] } ]|
-|Calculates and retains price of existing pizza order.|pizzaOrder.price()|[ { size: "small", toppings: ["cheese"], price: 8} ]|
+|Specifications |Input |Output|
+------------ | ------------- | -------------
+| **Program Collects User Input for Pizza Size** | "Small" | "Small" |
+| **Program Collects User Input for Sauce Base** | "Green Pesto" | "Green Pesto" |
+| **Program Collects User Input for Pizza Toppings**| "Pineapple" | "Pineapple" |
+| **Program Calculates and Displays Price According to User Inputs**| "Small, Green Pesto, Pineapple" | "$20.00" |
 
 ## Setup/Installation Requirements
 
@@ -26,7 +24,7 @@ A webpage which allows you to create a pizza, add toppings, and output a price f
 
 ## Known Bugs
 
-None at the moment.
+None at this time
 
 ## Support and Contact
 
